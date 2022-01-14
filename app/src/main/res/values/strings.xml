@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">rise</string>
+
+    <string name="settings_icon">button for settings</string>
+
+    <string name="home_header_1">today’s motivation</string>
+    <string name="home_button_1">+ today\'s motivation</string>
+    <string name="rocket_emoji">today\'s motivation icon</string>
+
+    <string name="home_header_2">my routines</string>
+    <string name="home_button_2">+ new routine</string>
+    <string name="calendar_emoji">my routines icon</string>
+
+    <string name="home_header_3">pinned to-dos</string>
+    <string name="home_button_3">+ new task</string>
+    <string name="pushpin_emoji">pinned to-dos icon</string>
+
+    <string name="motivation_instructions">Fill in the blanks!</string>
+    <string name="motivation_starter_1">Today I want to</string>
+    <string name="motivation_starter_2">and finishing my morning routine will</string>
+    <string name="motivation_blank_1">my goal</string>
+    <string name="motivation_blank_2">how will it help you accomplish your goal?</string>
+
+    <string name="header_edit_task">edit task</string>
+
+    <string name="done">done</string>
+
+    <!-- placeholder text -->
+    <string name="routine_name_filler">routine name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

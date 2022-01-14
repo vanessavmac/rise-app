@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout6"
+        tools:context=".addTaskFragment">
+
+        <Button
+            android:id="@+id/buttonSubmitTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/poppins_regular"
+            android:stateListAnimator="@null"
+            android:text="@string/done"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:backgroundTint="@color/yellow"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/minuteNumberPicker"
+            app:strokeColor="@color/yellow"
+            app:strokeWidth="1dp" />
+
+        <EditText
+            android:id="@+id/addTaskName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/grey"
+            android:ems="10"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/addRoutineHeader3" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="38dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Name"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addRoutineHeader3" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="105dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="hours"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/hourNumberPicker"
+            app:layout_constraintTop_toBottomOf="@+id/addTaskName" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="105dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Duration"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addTaskName" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="105dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="mins"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/minuteNumberPicker"
+            app:layout_constraintTop_toBottomOf="@+id/addTaskName" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="65dp"
+            android:src="@mipmap/calendar_emoji_foreground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/addRoutineHeader3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Add task"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <NumberPicker
+            android:id="@+id/hourNumberPicker"
+            android:layout_width="41dp"
+            android:layout_height="156dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:theme="@style/TimePickerStyle"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/addTaskName" />
+
+        <NumberPicker
+            android:id="@+id/minuteNumberPicker"
+            android:layout_width="40dp"
+            android:layout_height="155dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:theme="@style/TimePickerStyle"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/addTaskName" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

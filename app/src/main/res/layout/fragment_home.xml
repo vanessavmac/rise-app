@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".homeFragment">
+
+
+                <ImageView
+                    android:id="@+id/imageViewSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:contentDescription="@string/settings_icon"
+                    android:src="@drawable/settings_icon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewHeaderMotivation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="44dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/home_header_1"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewMotivation"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewHello" />
+
+                <Button
+                    android:id="@+id/buttonAddMotivation"
+                    android:layout_width="0dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:stateListAnimator="@null"
+                    android:text="@string/home_button_1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTodaysMotivation"
+                    app:strokeColor="@color/yellow"
+                    app:strokeWidth="1dp" />
+
+                <ImageView
+                    android:id="@+id/imageViewMotivation"
+                    android:layout_width="33dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="45dp"
+                    android:contentDescription="@string/rocket_emoji"
+                    android:src="@mipmap/rocket_emoji_foreground"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewHello" />
+
+                <TextView
+                    android:id="@+id/textViewHeaderRoutine"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="88dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/home_header_2"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewRoutine"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonAddMotivation" />
+
+                <ImageView
+                    android:id="@+id/imageViewRoutine"
+                    android:layout_width="33dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="45dp"
+                    android:contentDescription="@string/calendar_emoji"
+                    android:src="@mipmap/calendar_emoji_foreground"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonAddMotivation" />
+
+                 <!--<TextView
+                    android:id="@+id/textViewHeaderToDos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="44dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/home_header_3"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewToDos"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonAddRoutine" />-->
+
+               <!-- <Button
+                    android:id="@+id/buttonAddToDos"
+                    android:layout_width="0dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="50dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:stateListAnimator="@null"
+                    android:text="@string/home_button_3"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewHeaderToDos"
+                    app:layout_constraintVertical_bias="0.025"
+                    app:strokeColor="@color/yellow"
+                    app:strokeWidth="1dp" />-->
+
+                <!--<ImageView
+                    android:id="@+id/imageViewToDos"
+                    android:layout_width="33dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="45dp"
+                    android:contentDescription="@string/pushpin_emoji"
+                    android:src="@mipmap/pushpin_emoji_foreground"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonAddRoutine" />-->
+
+                <TextView
+                    android:id="@+id/textViewTodaysMotivation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewHeaderMotivation" />
+
+                <TextView
+                    android:id="@+id/textViewHello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageViewSettings" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

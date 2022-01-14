@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_edit_task"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".editTaskFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fragment_edit_motivation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".editMotivationFragment">
+
+            <TextView
+                android:id="@+id/textViewHeaderMotivation2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/header_edit_task"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextTaskName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="40dp"
+                android:backgroundTint="@color/grey"
+                android:ems="10"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewHeaderMotivation2" />
+
+            <EditText
+                android:id="@+id/editTextTaskDuration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="40dp"
+                android:backgroundTint="@color/grey"
+                android:ems="10"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPersonName"
+                android:textColor="@color/grey"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTaskName" />
+
+            <Button
+                android:id="@+id/buttonEditTaskDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:fontFamily="@font/poppins_regular"
+                android:stateListAnimator="@null"
+                android:text="@string/done"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                app:backgroundTint="@color/yellow"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTaskDuration"
+                app:strokeColor="@color/yellow"
+                app:strokeWidth="1dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="65dp"
+                android:src="@mipmap/calendar_emoji_foreground"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

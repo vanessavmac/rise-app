@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "753266605614",
+    "project_id": "rise-abf84",
+    "storage_bucket": "rise-abf84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753266605614:android:a490fc680410626fd1e9bf",
+        "android_client_info": {
+          "package_name": "com.example.rise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753266605614-uf6ptgjacolgusd3iu7dk50rlbbg4e6o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rise",
+            "certificate_hash": "d01be38be5293d9aa36b83ae146c092e5da85676"
+          }
+        },
+        {
+          "client_id": "753266605614-kqo834auim2hb7n8h7gga3t8nc8urs0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOMsIK3R9IJ4HmhjMAeN6oleaovLQLMv4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753266605614-kqo834auim2hb7n8h7gga3t8nc8urs0p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
